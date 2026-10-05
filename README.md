@@ -23,44 +23,41 @@
 
 7. ### Блок-схема
 <img width="308" height="744" alt="image" src="https://github.com/user-attachments/assets/7ec23f34-edfa-4b03-9d0c-09e60143f00c" />
-blob:https://app.diagrams.net/ad02a54f-11d7-46d6-ae7a-dd0dcda075b6
+
+https://app.diagrams.net/#Llr4.drawio#%7B%22pageId%22%3A%22u-3wB_kGdJZDJHv6uQ54%22%7D
 
 8. ## 2. Реализация программы
-9.
 #include <stdio.h>
 #include <locale.h>
-#include <math.h>
 
-void task3()
-{
-    setlocale(LC_ALL, "RUS");
-    float a;
-    float b;
-    float c;
+	int main()
+	{
+    	setlocale(LC_ALL, "RUS");
+    	int A, B, C;
+    	printf("Введите три числа (A, B, C): ");
 
-    puts("Введите длину первого катета:");
-    scanf("%f", &a);
-
-    puts("Введите длину второго катета:");
-    scanf("%f", &b);
-
-    c = sqrt(a * a + b * b);
-
-    printf("Гипотенуза прямоугольного треугольника = %.2f\n", c);
-}
-
-int main()
-{
-
-    task3();
-}
+	    if (scanf("%d %d %d", &A, &B, &C) != 3)
+	    {
+	        printf("Ошибка\n");
+	    }
+	    if ((A % 3 == 0) && (B % 3 == 0) && (C % 3 == 0))
+	    {
+	        printf("Гипотеза верна: все числа кратны трем\n");
+	    }
+	    else
+	    {
+	        printf("Гипотеза не верна: хотя бы одно число не кратно трем\n");
+	    }
+	}
 
 ## 3. Результаты работы программы
-Введите длину первого катета:
-11
-Введите длину второго катета:
-22
-Гипотенуза прямоугольного треугольника = 24,60
+Введите три числа (A, B, C): 3
+
+9
+
+12
+
+Гипотеза верна: все числа кратны трем
 
 ## 4. Информация о разработчике
 Мамонов Илья бИЦТ-261 1пг
