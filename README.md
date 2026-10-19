@@ -26,28 +26,27 @@
 https://app.diagrams.net/#LLR4.drawio#%7B%22pageId%22%3A%22uwUSR64DMqKC9Y4o2Zkd%22%7D
 
 8. ## 2. Реализация программы
+```c
+#define _CRT_SECURE_NO_DEPRECATE
 #include <stdio.h>
-#include <locale.h>
+#include<locale.h>
 
-	int main()
-	{
-    	setlocale(LC_ALL, "RUS");
-    	int A, B, C;
-    	printf("Введите три числа (A, B, C): ");
+int main()
+{
+    setlocale(LC_ALL, "RUS");
+    int A, B, C;
+    int condition;
 
-	    if (scanf("%d %d %d", &A, &B, &C) != 3)
-	    {
-	        printf("Ошибка\n");
-	    }
-	    if ((A % 3 == 0) && (B % 3 == 0) && (C % 3 == 0))
-	    {
-	        printf("Гипотеза верна: все числа кратны трем\n");
-	    }
-	    else
-	    {
-	        printf("Гипотеза не верна: хотя бы одно число не кратно трем\n");
-	    }
-	}
+    printf("===ПРОВЕРКА ГИПОТЕЗЫ===\n");
+    printf("Введите три целых числа (A, B, C): ");
+    scanf("%d %d %d", &A, &B, &C);
+    condition = (A % 3 == 0) && (B % 3 == 0) && (C % 3 == 0);
+
+    printf("Гипотеза подтверждается (1 - да, 0 - нет): %d\n", condition);
+
+    return 0;
+}
+```
 
 ## 3. Результаты работы программы
 Введите три числа (A, B, C): 3
