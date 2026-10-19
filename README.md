@@ -22,9 +22,8 @@
 6. **Конец**
 
 7. ### Блок-схема
-<img width="308" height="744" alt="image" src="https://github.com/user-attachments/assets/7ec23f34-edfa-4b03-9d0c-09e60143f00c" />
-
-https://app.diagrams.net/#Llr4.drawio#%7B%22pageId%22%3A%22u-3wB_kGdJZDJHv6uQ54%22%7D
+<img width="298" height="651" alt="image" src="https://github.com/user-attachments/assets/d7d7ebb1-4ac4-4645-b2ee-ef2904d676d4" />
+https://app.diagrams.net/#LLR4.drawio#%7B%22pageId%22%3A%22uwUSR64DMqKC9Y4o2Zkd%22%7D
 
 8. ## 2. Реализация программы
 #include <stdio.h>
